@@ -2704,10 +2704,10 @@ body.locked .page-wrapper {
 
 .main-slider-two__title {
   position: relative;
-  font-size: 90px;
-  color: var(--oxpins-white);
+  font-size: 40px;
+  color: black;
   font-weight: 900;
-  line-height: 110px;
+  line-height: 50px;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   margin-top: 18px;
