@@ -2616,7 +2616,7 @@ body.locked .page-wrapper {
 .main-slider-two .container {
   position: relative;
   padding-top: 185px;
-  padding-bottom: 190px;
+  padding-bottom: 50px;
   z-index: 30;
 }
 
@@ -2681,7 +2681,7 @@ body.locked .page-wrapper {
 .main-slider-two__content {
   position: relative;
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 .main-slider-two__sub-title {
@@ -2705,7 +2705,7 @@ body.locked .page-wrapper {
 .main-slider-two__title {
   position: relative;
   font-size: 40px;
-  color: black;
+  color: white;
   font-weight: 900;
   line-height: 50px;
   letter-spacing: -0.04em;
@@ -2722,6 +2722,7 @@ body.locked .page-wrapper {
   transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
   transition: transform 2000ms ease, opacity 2000ms ease;
   transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-slider-two__btn-box {
@@ -3994,7 +3995,7 @@ body.locked .page-wrapper {
 .brand-one .swiper-slide img {
   -webkit-transition: 500ms;
   transition: 500ms;
-  opacity: 0.3;
+  /* opacity: 0.3; */
   max-width: 100%;
 }
 
@@ -6551,7 +6552,7 @@ body.locked .page-wrapper {
 .google-map {
   position: relative;
   display: block;
-  background-color: var(--oxpins-extra);
+  /* background-color: var(--oxpins-extra); */
 }
 
 .google-map__one {
@@ -6560,7 +6561,7 @@ body.locked .page-wrapper {
   border: none;
   height: 475px;
   width: 100%;
-  mix-blend-mode: luminosity;
+  /* mix-blend-mode: luminosity; */
 }
 
 /*--------------------------------------------------------------
@@ -7837,6 +7838,7 @@ body.locked .page-wrapper {
   display: block;
   background-color: var(--oxpins-base);
   padding: 80px 0 68px;
+  margin: 80px 0 80px;
 }
 
 .become-volunteer__inner {
