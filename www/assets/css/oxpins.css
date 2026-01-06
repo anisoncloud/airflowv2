@@ -1627,7 +1627,7 @@ ul {
 --------------------------------------------------------------*/
 .main-header-two {
   width: 100%;
-  background: var(--oxpins-black);
+  /* background: var(--oxpins-black); */
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   z-index: 99;
@@ -1635,7 +1635,7 @@ ul {
 }
 
 .stricky-header.main-menu-two {
-  background-color: var(--oxpins-black);
+  /* background-color: var(--oxpins-black); */
 }
 
 .main-menu-two__wrapper {
