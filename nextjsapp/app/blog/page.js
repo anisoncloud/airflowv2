@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import BlogButton from '../Component/button'
 const myBlog = [
     {
         id:1,
@@ -21,10 +22,11 @@ export default function blog() {
         <ul>
         {
             myBlog.map((item)=>{
-                return <li key={item.id}><Link href={`/blog/${item.id}`}>{item.id}</Link></li>
+                return <li key={item.id}><Link href={`/blog/${item.id}`}>{item.title}</Link></li>
             })
         }
         </ul>
+        <BlogButton/>
     </div>
   )
 }

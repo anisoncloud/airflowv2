@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function BlogPage({params}) {
-    const {id} = params;
+export default async function BlogPage({params}) {
+    const {id} = await params;
   return (
     <div>
         <h1>Blog Title</h1>
