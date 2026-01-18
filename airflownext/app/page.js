@@ -1,7 +1,7 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import logo from "@/public/assets/images/resources/logo-2.png"
 import Link from "next/link";
+import MainSlider from "./MainSlider";
 
 export default function Home() {
   return (
@@ -13,9 +13,9 @@ export default function Home() {
 
 
 
-    <div className="preloader">
+    {/* <div className="preloader">
         <div className="preloader__image"></div>
-    </div>
+    </div> */}
     
 
 
@@ -152,9 +152,9 @@ export default function Home() {
         <div className="stricky-header stricked-menu main-menu main-menu-two">
             <div className="sticky-header__content"></div>
         </div>
-
+<MainSlider/>
        
-        <section className="main-slider-two clearfix">
+        {/* <section className="main-slider-two clearfix">
             <div className="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
                 "effect": "fade",
                 "pagination": {
@@ -173,7 +173,11 @@ export default function Home() {
 
                     <div className="swiper-slide">
                         <div className="image-layer-two"
-                            style="background-image: url(assets/images/backgrounds/main-slider-2-5.jpg);"></div>
+                            style={{backgroundImage: "url('/assets/images/backgrounds/main-slider-2-5.jpg')",
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                backgroundRepeat: "no-repeat"
+                            }}></div>
                         <div className="container">
                             <div className="row">
                                 <div className="col-xl-12">
@@ -190,7 +194,11 @@ export default function Home() {
                     </div>
                     <div className="swiper-slide">
                         <div className="image-layer-two"
-                            style="background-image: url(assets/images/backgrounds/main-slider-2-1.jpg);"></div>
+                            style={{backgroundImage: "url('/assets/images/backgrounds/main-slider-2-1.jpg')",
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                backgroundRepeat: "no-repeat"
+                            }}></div>
                         <div className="container">
                             <div className="row">
                                 <div className="col-xl-12">
@@ -208,7 +216,11 @@ export default function Home() {
 
                     <div className="swiper-slide">
                         <div className="image-layer-two"
-                            style="background-image: url(assets/images/backgrounds/main-slider-2-2.jpg);"></div>
+                            style={{backgroundImage: "url('/assets/images/backgrounds/main-slider-2-2.jpg')",
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                backgroundRepeat: "no-repeat"
+                            }}></div>
                         <div className="container">
                             <div className="row">
                                 <div className="col-xl-12">
@@ -226,7 +238,11 @@ export default function Home() {
 
                     <div className="swiper-slide">
                         <div className="image-layer-two"
-                            style="background-image: url(assets/images/backgrounds/main-slider-2-3.jpg);"></div>
+                            style={{backgroundImage: "url('/assets/images/backgrounds/main-slider-2-3.jpg')",
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                backgroundRepeat: "no-repeat"
+                            }}></div>
                         <div className="container">
                             <div className="row">
                                 <div className="col-xl-12">
@@ -243,7 +259,11 @@ export default function Home() {
                     </div>
                     <div className="swiper-slide">
                         <div className="image-layer-two"
-                            style="background-image: url(assets/images/backgrounds/main-slider-2-4.jpg);"></div>
+                            style={{backgroundImage: "url('/assets/images/backgrounds/main-slider-2-4.jpg')",
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                backgroundRepeat: "no-repeat"
+                            }}></div>
                         <div className="container">
                             <div className="row">
                                 <div className="col-xl-12">
@@ -269,7 +289,7 @@ export default function Home() {
                 </div>
 
             </div>
-        </section>
+        </section> */}
 
 
         <section className="about-two">
@@ -471,9 +491,15 @@ export default function Home() {
             </div>
         </section>
         <section className="google-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.7574085091046!2d90.41222667589795!3d23.79165148719043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a0d9c11b0f%3A0x6ce829f51c6e7bb4!2sOriental%20Arcadia%2C%2027%20Rd%2044%2C%20Dhaka%201212!5e0!3m2!1sen!2sbd!4v1767689246227!5m2!1sen!2sbd"
-                className="google-map__one" allowfullscreen></iframe>
+            
+                <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.7574085091046!2d90.41222667589795!3d23.79165148719043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a0d9c11b0f%3A0x6ce829f51c6e7bb4!2sOriental%20Arcadia%2C%2027%20Rd%2044%2C%20Dhaka%201212!5e0!3m2!1sen!2sbd!4v1767689246227!5m2!1sen!2sbd"
+  className="google-map__one"
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+></iframe>
+
 
         </section>
 
@@ -519,7 +545,11 @@ Dhaka -1212</h3>
                     <span className="section-title__tagline">We value our clients</span>
                     <h2 className="section-title__title">Our Clients </h2>
             </div>
-            <div className="brand-two-shape-1" style="background-image: url(assets/images/shapes/brand-two-shape-1.png);">
+            <div className="brand-two-shape-1" style={{backgroundImage: "url('/assets/images/shapes/brand-two-shape-1.png')",
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                backgroundRepeat: "no-repeat"
+                            }}> 
             </div>
             <div className="container">
                 <div className="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
@@ -597,7 +627,11 @@ Dhaka -1212</h3>
         </section>
 
         <footer className="site-footer">
-            <div className="site-footer-bg" style="background-image: url(assets/images/backgrounds/site-footer-bg.jpg);">
+            <div className="site-footer-bg" style={{backgroundImage: "url('/assets/images/backgrounds/site-footer-bg.jpg')",
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                backgroundRepeat: "no-repeat"
+                            }}>
             </div>
             <div className="site-footer__top">
                 <div className="container">
@@ -605,7 +639,7 @@ Dhaka -1212</h3>
                         <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div className="footer-widget__column footer-widget__about">
                                 <div className="footer-widget__about-logo">
-                                    <Link href="index.html"><Image src="/assets/images/resources/logo-2.png" style="width:100px;" alt="" fill priority/></Link>
+                                    <Link href="/"><Image src="/assets/images/resources/logo-2.png"  alt="" fill priority/></Link>
                                 </div>
                                 <div className="footer-widget__about-text-box">
                                     <p className="footer-widget__about-text">With over 17 years of experience in the HVAC industry, we have built a strong
@@ -701,8 +735,8 @@ Dhaka -1212</h3>
             <span className="mobile-nav__close mobile-nav__toggler"><i className="fa fa-times"></i></span>
 
             <div className="logo-box">
-                <Link href="index.html" aria-label="logo image"><Image src="/assets/images/resources/logo-2.png" width="143"
-                        alt="" fill priority fill priority/></Link>
+                <Link href="/" aria-label="logo image"><Image src="/assets/images/resources/logo-2.png"
+                        alt="" fill priority/></Link>
             </div>
             <div className="mobile-nav__container"></div>
 
@@ -733,7 +767,7 @@ Dhaka -1212</h3>
         <div className="search-popup__overlay search-toggler"></div>
         <div className="search-popup__content">
             <form action="#">
-                <label for="search" className="sr-only">search here</label>
+                <label htmlFor="search" className="sr-only">search here</label>
                 <input type="text" id="search" placeholder="Search Here..." />
                 <button type="submit" aria-label="search submit" className="thm-btn">
                     <i className="icon-magnifying-glass"></i>

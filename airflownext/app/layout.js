@@ -1,20 +1,10 @@
-import { Geist, Geist_Mono } from "next/font/google";
 //import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import 'bootstrap/dist/css/bootstrap.min.css'
-import BootstrapClient from '@/app/BootstrapClient'; // Client component import
+// import "@/public/assets/css/oxpins.css"
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import BootstrapClient from '@/app/BootstrapClient'; // Client component import
 
 import Link from "next/link";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -24,51 +14,66 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        <meta charSet="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Air Flow HVAC Systems </title>    
+    <link 
+    rel="apple-touch-icon" 
+    sizes="180x180" 
+    href="assets/images/favicons/apple-touch-icon.png" />
+    <link 
+    rel="icon" 
+    type="image/png" 
+    sizes="32x32" 
+    href="assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <meta name="description" content="Oxpins HTML 5 Template " />
 
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" href="/">Home</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" href="/about">About</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" href="/blog">Blog</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" href="/posts">Posts</Link>
-        </li>
-        <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </Link>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link className="dropdown-item" href="#">Action</Link></li>
-            <li><Link className="dropdown-item" href="#">Another action</Link></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><Link className="dropdown-item" href="#">Something else here</Link></li>
-          </ul>
-        </li>
-        
-      </ul>
-      
-    </div>
-  </div>
-</nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com/"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin="true"/>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700display=swap" rel="stylesheet"/>
 
 
-        
-        
-        {children}
-        <BootstrapClient /> {/* Add the client component here */}
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="assets/vendors/oxpins-icons/style.css"/>
+    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/reey-font/stylesheet.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/assets/vendors/owl-carousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bxslider/jquery.bxslider.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
+
+    <link rel="stylesheet" href="assets/css/oxpins.css" />
+    <link rel="stylesheet" href="assets/css/oxpins-responsive.css" />
+    </head>
+      <body>
+          {children}
+        {/* <BootstrapClient />  */}
+        {/* Add the client component here */}
+        <footer/>
       </body>
     </html>
   );
