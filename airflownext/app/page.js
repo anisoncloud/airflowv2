@@ -3,7 +3,8 @@ import Logo from "@/public/assets/images/resources/logo-2.png"
 import Link from "next/link";
 import MainSlider from "./MainSlider";
 import AboutImages from "./AboutImages";
-import OurServices from "./OurServices";
+import OurService from "./OurService";
+import OurPartners from "./OurPartners";
 
 export default function Home() {
   return (
@@ -159,7 +160,7 @@ export default function Home() {
 <AboutImages/>
 
         
-        <OurServices/>
+        <OurService/>
         <section className="become-volunteer">
             <div className="container">
                 <div className="become-volunteer__inner">
@@ -226,6 +227,7 @@ Dhaka -1212</h3>
                 </div>
             </div>
         </section>
+        <OurPartners/>
         <section className="brand-one brand-two">
             <div className="section-title text-center">
                     <span className="section-title__tagline">We value our clients</span>
