@@ -1,0 +1,3 @@
+@getHeader()                
+@yield('content')               
+@getFooter()        
