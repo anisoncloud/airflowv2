@@ -26,30 +26,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/bootstrap/css/bootstrap.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/animate/animate.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/animate/custom-animate.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/fontawesome/css/all.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/jarallax/jarallax.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/jquery-magnific-popup/jquery.magnific-popup.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/nouislider/nouislider.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/nouislider/nouislider.pips.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/odometer/odometer.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/swiper/swiper.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/oxpins-icons/style.css')}}">
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/tiny-slider/tiny-slider.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/reey-font/stylesheet.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/owl-carousel/owl.carousel.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/owl-carousel/owl.theme.default.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/bxslider/jquery.bxslider.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/bootstrap-select/css/bootstrap-select.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/vegas/vegas.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/jquery-ui/jquery-ui.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/vendors/timepicker/timePicker.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/bootstrap/css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/animate/animate.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/animate/custom-animate.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/fontawesome/css/all.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/jarallax/jarallax.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/jquery-magnific-popup/jquery.magnific-popup.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/nouislider/nouislider.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/nouislider/nouislider.pips.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/odometer/odometer.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/swiper/swiper.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/oxpins-icons/style.css')}}">
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/tiny-slider/tiny-slider.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/reey-font/stylesheet.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/owl-carousel/owl.carousel.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/owl-carousel/owl.theme.default.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/bxslider/jquery.bxslider.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/bootstrap-select/css/bootstrap-select.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/vegas/vegas.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/jquery-ui/jquery-ui.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/vendors/timepicker/timePicker.css')}}" />
 
     <!-- template styles -->
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/css/oxpins.css')}}" />
-    <link rel="stylesheet" href="{{ asset('/public/front/assets_airflow/css/oxpins-responsive.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/css/oxpins.css')}}" />
+    <link rel="stylesheet" href="{{asset('/public/front/assets_airflow/css/oxpins-responsive.css')}}" />
 </head>
 
 <body class="custom-cursor">
@@ -66,7 +66,7 @@
                     <div class="main-menu-two__wrapper-inner">
                         <div class="main-menu-two__left">
                             <div class="main-menu-two__logo">
-                                <a href="index.html"><img src="assets/images/resources/logo-2.png" alt=""></a>
+                                <a href="index.html"><img src="{{asset('/public/assets/images/resources/logo-2.png')}}" alt=""></a>
                             </div>
                             <div class="main-menu-two__shape-1 float-bob-x">
                                 <img src="assets/images/shapes/main-menu-shape-1.png" alt="">

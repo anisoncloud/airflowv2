@@ -158,11 +158,11 @@ class HomeController extends Controller
 
     //=======================================Dont Touch==========================================
 
-public function index() {
+/* public function index() {
      return view('front.index_airflow');
-}
+} */
 
-    /* public function index(){
+    public function index(){
         //check env------------------------------        
         $dbName = env('DB_DATABASE');
         $dbUser = env('DB_USERNAME');
@@ -226,7 +226,7 @@ public function index() {
             return view('admin.install.setup');
         }
 
-    }  */
+    } 
     public function handleDynamicRoute(Request $request)
     {
         try{
