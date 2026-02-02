@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import BootstrapClient from '@/app/BootstrapClient'; // Client component import
-
+import Script from 'next/script';
 import "@/public/assets/styles.css"
 import Alert from './component/Alert';
 
@@ -12,6 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {
+        <Script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"/>
+      }
       <body >
         {children}
         <Alert/>
