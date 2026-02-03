@@ -1,7 +1,7 @@
 // import 'bootstrap/dist/css/bootstrap.min.css'
 // import BootstrapClient from '@/app/BootstrapClient'; // Client component import
 import Script from "next/script";
-import "@/public/assets/styles.css";
+// import "@/public/assets/styles.css";
 import Alert from "./component/Alert";
 export const metadata = {
   title: "Create Next App",
@@ -30,11 +30,17 @@ export default function RootLayout({ children }) {
         />
         <Script src="https://code.jquery.com/jquery-3.5.1.min.js" />
         <Script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" />
-        <Script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" />
+        <Script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" />
+        <link
+          rel="stylesheet"
+          href="/assets/styles.css"
+        />
+        <Script src="/assets/customjs.js" />
       </head>
       <body>
         {children}
         <Alert />
+        {/* <BootstrapClient/> */}
       </body>
     </html>
   );

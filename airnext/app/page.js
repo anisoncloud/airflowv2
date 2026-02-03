@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import Navbar from "./component/Navbar";
+import TheModal from "./component/TheModal";
 
 export default function Home() {
   return (
@@ -295,6 +297,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* <TheModal/> */}
     </div>
   );
 }
